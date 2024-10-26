@@ -454,27 +454,33 @@ Passed: 15 Failed: 0 Skipped: 0 Total: 15
 1. **モジュールファイルのダウンロード**: [モジュールファイルのダウンロードリンク] から `ExpressionEvaluator.psm1` ファイルをダウンロードします。
 2. **モジュールファイルの配置**: ダウンロードした `ExpressionEvaluator.psm1` ファイルを任意のディレクトリに配置します。
 3. **PowerShell 実行ポリシーの設定**: (必要に応じて) 以下のコマンドを実行して PowerShell スクリプトの実行ポリシーを変更します。
+```
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
    ```
+```plaintext
    管理者権限が必要です。
 
 ### 2. モジュールのインポート
 
 1. PowerShell コンソールを開きます。
 2. 以下のコマンドを実行してモジュールをインポートします。
+```
    ```powershell
    Import-Module -Name .\ExpressionEvaluator.psm1
    ```
+```plaintext
    `.\ExpressionEvaluator.psm1` の部分は、実際にファイルが配置されている場所を指定してください。
 
 ### 3. 式の評価
 
 1. 以下のコマンドを実行して `EvaluateExpression` 関数を呼び出し、式を評価します。
+```
    ```powershell
    $result = EvaluateExpression -Expression "5 + 10 * 2"
    Write-Output $result
    ```
+```plaintext
    `-Expression` パラメータに評価する式を指定します。
 
 ### 4. 計算結果
@@ -485,6 +491,7 @@ Passed: 15 Failed: 0 Skipped: 0 Total: 15
 
 エラーが発生した場合、`ErrorRecord` オブジェクトが返されます。`ErrorRecord` オブジェクトの `Exception.Message` プロパティにエラーメッセージが含まれています。
 
+```
 ```powershell
 try {
     $result = EvaluateExpression -Expression "10 / 0"
@@ -493,6 +500,7 @@ try {
     Write-Error $_.Exception.Message
 }
 ```
+```plaintext
 
 ### 6. 注意事項
 
