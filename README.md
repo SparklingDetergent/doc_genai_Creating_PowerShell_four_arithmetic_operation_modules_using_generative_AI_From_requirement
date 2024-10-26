@@ -1,7 +1,7 @@
-# doc_genai_Utilizing_generation_AI_on_Mac_Mini_-generation-
-Mac Mini での生成AI活用（生成）
+# doc_genai_Creating_PowerShell_four_arithmetic_operation_modules_using_generative_AI:_From_requirements_definition_to_release
+生成AIの活用によるPowerShell四則演算モジュール作成:_要件定義からリリースまで
 
-## Mac Mini での生成 AI 活用. 文字列式評価モジュールの構築
+## 生成 AI 活用. 文字列式評価モジュールの構築
 
 - [概要](#概要)
 - [フェーズ 1. 要件定義](#フェーズ-1-要件定義)
